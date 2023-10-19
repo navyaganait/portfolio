@@ -1,0 +1,28 @@
+let typed=new Typed(".auto-input",{
+	strings:['Student','Aspiring Software Engineer','Learner'],
+	typeSpeed:100,
+	backSpeed:100,
+	backDelay:2000,
+	loop: true,
+	// smartBackspace:true,
+	// cursor:next-line,  
+	showCursor: false,
+})
+console.log(typed.js)
+
+var tablinks=document.getElementsByClassName('tab-links')
+var tabcontents=document.getElementsByClassName('table-contents')
+
+function opentab(tabname){
+	// for(tablink of tablinks)
+	// {
+	// 	tablink.classList.remove("active-link");
+	// }
+
+	for(tabcontent of tabcontents)
+	{
+		tabcontent.classList.remove("active-tab");
+	}
+	// event.currentTarget.classList.add("active-link")
+	document.getElementById(tabname).classList.add("active-tab")
+}
